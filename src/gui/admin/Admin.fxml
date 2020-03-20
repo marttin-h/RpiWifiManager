@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" maxWidth="480.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.admin.AdminController">
+   <children>
+      <Button fx:id="btnPotvrd" layoutX="140.0" layoutY="649.0" mnemonicParsing="false" onAction="#potvrdenie" prefHeight="60.0" prefWidth="200.0" text="Potvrdiť">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icons8_ok_90px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextArea fx:id="tstLog" layoutX="15.0" layoutY="205.0" prefHeight="378.0" prefWidth="444.0" />
+      <TextField fx:id="txtSSID" layoutX="15.0" layoutY="14.0" prefWidth="150.0" promptText="Zadaj nazov wifi" />
+      <TextField fx:id="txtPSWD" layoutX="180.0" layoutY="14.0" prefWidth="150.0" promptText="Heslo wifi" />
+      <Button fx:id="btnSaveWifi" layoutX="411.0" layoutY="14.0" mnemonicParsing="false" onAction="#saveWifiSettings" text="Uložiť" />
+   </children>
+</AnchorPane>
